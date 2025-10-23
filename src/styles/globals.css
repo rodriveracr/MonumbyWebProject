@@ -1,0 +1,19 @@
+/* src/styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-bg {
+  background: linear-gradient(135deg, #numbyDarkBlue 0%, #numbyBlack 100%);
+}
+
+/* Estilos globales premium */
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Retro-futurista */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.glow {
+  filter: drop-shadow(0 0 10px #numbyNeonBlue);
+}

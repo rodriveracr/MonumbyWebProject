@@ -1,7 +1,6 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+// next.config.ts
+const nextConfig = {
+  // ¡Sin i18n aquí!
 };
 
 export default nextConfig;
