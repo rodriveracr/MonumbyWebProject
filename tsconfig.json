@@ -1,8 +1,11 @@
-/* src/tsconfig.json */
 {
   "compilerOptions": {
     "target": "ES6",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -13,14 +16,26 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx", // Ajustado por Next.js 16
     "incremental": true,
     "plugins": [
       {
         "name": "next"
       }
-    ]
+    ],
+    "ignoreDeprecations": "5.0"
   },
-  "include": ["**/*.ts", "**/*.tsx", "next-env.d.ts", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.d.ts",
+    "next-env.d.ts",
+    ".next/dev/types/**/*.ts",
+    ".next\\dev/types/**/*.ts",
+    ".next\\dev/types/**/*.ts",
+    ".next/types/**/*.ts"
+  ], // Ajustado por Next.js
+  "exclude": [
+    "node_modules"
+  ]
 }

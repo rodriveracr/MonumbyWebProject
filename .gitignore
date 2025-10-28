@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Large video files (exceed GitHub 100MB limit)
+# These should be hosted externally or via Git LFS
+public/*.mp4
+public/*.mov
+public/*.avi

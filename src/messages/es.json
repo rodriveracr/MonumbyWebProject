@@ -1,15 +1,283 @@
 {
-  "Hero": {
-    "title": "NØ. — Explora el mundo digital",
-    "subtitle": "Productos digitales minimalistas y funcionales para crear experiencias memorables",
-    "cta": "Explorar"
-  },
-  "Navigation": {
-    "projects": "Proyectos",
-    "services": "Servicios",
+  "Navbar": {
+    "home": "Inicio",
+    "products": "Productos",
+    "inks": "Tintas",
+    "monumbyProducts": "Productos Monumby",
+    "accessories": "Accesorios",
     "about": "Nosotros",
-    "career": "Carrera",
-    "blog": "Blog",
     "contact": "Contacto"
+  },
+  "Hero": {
+    "title": "MOTHER OF NUMBY",
+    "slogan": "MOTHER OF NUMBY LÍNEA PREMIUM DE NO PAIN.",
+    "videoTitle": "Descubre la Experiencia Monumby",
+    "videoParagraph1": "Mother of Numby es la nueva crema anestésica de No Pain, probada por el artista Emanuel Tres Palacios (Medellín, 10–12 años de experiencia). Primera impresión: trae 3 veces más contenido que No Pain, aroma distinto y una textura más manejable y fácil de aplicar.",
+    "videoParagraph2": "Se aplica cubriendo la piel y se espera 90–120 minutos para el bloqueo completo. A los 4 días, la pieza cicatrizó muy rápido y sin efectos secundarios; por el contrario, ayudó a la cicatrización. Conclusión: Mother of Numby, altamente recomendada para artistas.",
+    "videoNotSupported": "Tu navegador no soporta la reproducción de video.",
+    "product1": {
+      "name": "Mother of Numby",
+      "description": "Anestesia tópica ultra-concentrada para tatuajes de gran escala. Efecto duradero y confort máximo."
+    },
+    "product2": {
+      "name": "Suero Cicatrizante",
+      "description": "Recuperación premium para tu piel. Fórmula natural que acelera la sanación y protege tus colores."
+    },
+    "product3": {
+      "name": "Tónico de Hamamelis",
+      "description": "Limpieza profesional y cuidado antibacteriano. El complemento perfecto para tu rutina post-tattoo."
+    },
+    "product4": {
+      "name": "Serum Cicatrizante Glow",
+      "description": "El Serum Cicatrizante Glow de Numby acelera la recuperación con una hidratación profunda, manteniendo tus colores vibrantes y tu arte impecable. ¡Siente la magia en cada gota!"
+    },
+    "product5": {
+      "name": "Monumby",
+      "description": "Monumby se convierte en el aliado imprescindible de tatuadores y clientes, brindando alivio rápido y efectivo para que el arte fluya sin barreras. ¡Descubre Monumby y lleva tu pasión por el tatuaje a otro nivel!"
+    },
+    "product6": {
+      "name": "Suero Monumby",
+      "description": "El suero de Monumby, símbolo de cuidado y fuerza, nutre rápido tu viaje de tatuajes. ¡Desata tu arte con Monumby y haz que cada marca cuente tu historia!"
+    },
+    "product7": {
+      "name": "Suero y Spray Monumby",
+      "description": "El suero y spray de Monumby, aliados esenciales del tatuaje, se alían con la precisión del artista para un proceso más suave y profesional. ¡Confía en Monumby para que cada sesión deje huella con comodidad y estilo!"
+    }
+    ,
+    "cta": "DESCUBRE MÁS"
+  },
+  "Testimonials": {
+    "title": "VOCES DE ALMAS AUDACES",
+    "testimonial1": {
+      "quote": "Un cambio radical para mi arte. La comodidad de mis clientes se disparó y mi trabajo alcanzó otro nivel.",
+      "author": "Alex Ink, Artista Tattoo"
+    },
+    "testimonial2": {
+      "quote": "Nunca había experimentado tal nivel de cuidado premium. Mi piel sanó más rápido y los colores quedaron perfectos.",
+      "author": "Sofia M., Cliente"
+    },
+    "testimonial3": {
+      "quote": "Monumby no es solo un producto, es una filosofía. Eleva tu práctica y redefine lo que significa ser profesional.",
+      "author": "Marco V., Especialista PMU"
+    }
+  },
+  "ArtistGallery": {
+    "title": "CONFIANZA DE ARTISTAS",
+    "subtitle": "Profesionales reales. Resultados reales.",
+    "cta": "ÚNETE AL MOVIMIENTO"
+  },
+  "Footer": {
+    "rights": "Todos los derechos reservados.",
+    "links": "Enlaces",
+    "contact": "Contacto",
+    "faq": "Preguntas Frecuentes",
+    "about": "Acerca de",
+    "legal": "Legal",
+      "privacy": "Política de Privacidad",
+      "terms": "Términos de Uso",
+    "support": "Soporte",
+    "madeWith": "Hecho con",
+    "inCostaRica": "en Costa Rica"
+  },
+  "MonumbyProducts": {
+    "title": "LÍNEA PREMIUM DE CUIDADO",
+    "subtitle": "Los tres pilares de Monumby para el cuidado profesional del tatuaje",
+    "product1": {
+      "name": "Mother of Numby",
+      "description": "Anestesia tópica ultra-concentrada diseñada para sesiones de tatuaje extensas.",
+      "feature1": "Efecto prolongado de 1-5 horas",
+      "feature2": "Fórmula natural con agentes antiinflamatorios",
+      "feature3": "No altera los tonos de pigmentación"
+    },
+    "product2": {
+      "name": "Suero Cicatrizante Monumby",
+      "description": "Acelerador de recuperación con extractos naturales premium.",
+      "feature1": "Reduce inflamación y enrojecimiento",
+      "feature2": "Hidratación profunda sin obstruir poros",
+      "feature3": "Protege y realza los colores del tatuaje"
+    },
+    "product3": {
+      "name": "Tónico de Hamamelis Monumby",
+      "description": "Limpiador antibacteriano para preparación y cuidado post-tattoo.",
+      "feature1": "Limpieza profunda sin irritación",
+      "feature2": "Propiedades antibacterianas naturales",
+      "feature3": "Calma y prepara la piel"
+    },
+    "cta": "CONTACTAR",
+    "back": "Volver al inicio"
+  },
+  "Tintas": {
+    "title": "TINTAS PREMIUM",
+    "subtitle": "Pigmentos profesionales de alta calidad",
+    "comingSoon": "PRÓXIMAMENTE"
+  },
+  "Accesorios": {
+    "title": "ACCESORIOS PROFESIONALES",
+    "subtitle": "Herramientas y equipamiento para artistas",
+    "comingSoon": "PRÓXIMAMENTE"
+  },
+  "Nosotros": {
+    "title": "NUESTRA HISTORIA",
+    "subtitle": "El origen de una revolución en el cuidado del tatuaje",
+    "originTitle": "EL NACIMIENTO DE MONUMBY",
+    "originParagraph1": "Monumby nace del legado de No Pain, la marca pionera en anestesia tópica para tatuajes que revolucionó la industria con productos de calidad excepcional y confianza profesional.",
+    "originParagraph2": "Mother of Numby representa la evolución natural de años de experiencia, investigación y escucha activa a la comunidad de artistas del tatuaje. Es la respuesta a la demanda de una línea premium que combine eficacia máxima con ingredientes naturales de la más alta calidad.",
+    "nopainTitle": "LA RELACIÓN CON NO PAIN",
+    "nopainParagraph1": "No Pain fundó su reputación proporcionando soluciones efectivas y seguras para miles de artistas alrededor del mundo. Su compromiso con la calidad y la innovación sentó las bases para lo que vendría después.",
+    "nopainParagraph2": "Monumby es la extensión premium de esta filosofía: mantiene los valores fundamentales de No Pain—seguridad, eficacia y confianza—mientras eleva cada aspecto a un nivel superior de lujo y rendimiento.",
+    "nopainParagraph3": "La creación de Monumby por parte de No Pain no fue casualidad, sino el resultado de años escuchando a profesionales que pedían algo más: mayor duración, mejor textura, ingredientes naturales y un cuidado integral que acompañe todo el proceso del tatuaje.",
+    "missionTitle": "NUESTRA MISIÓN",
+    "missionParagraph1": "Empoderar a artistas del tatuaje y sus clientes con productos premium que transformen cada sesión en una experiencia excepcional.",
+    "missionParagraph2": "Creemos que el arte del tatuaje merece el mejor cuidado posible. Por eso, cada producto Monumby está formulado con:",
+    "missionFeature1": "Ingredientes naturales de origen ético",
+    "missionFeature2": "Tecnología avanzada probada por profesionales",
+    "missionFeature3": "Compromiso con la seguridad y sostenibilidad",
+    "missionFeature4": "Respeto por el arte y los artistas",
+    "valuesTitle": "NUESTROS VALORES",
+    "value1Title": "Excelencia",
+    "value1Description": "No aceptamos menos que la perfección en cada fórmula",
+    "value2Title": "Innovación",
+    "value2Description": "Constantemente evolucionamos para estar a la vanguardia",
+    "value3Title": "Confianza",
+    "value3Description": "La seguridad y satisfacción son nuestra prioridad",
+    "value4Title": "Comunidad",
+    "value4Description": "Crecemos junto a los artistas que confían en nosotros",
+    "closingTitle": "ÚNETE A LA REVOLUCIÓN",
+    "closingParagraph": "Monumby no es solo una marca, es un movimiento. Cada producto cuenta una historia de pasión, dedicación y respeto por el arte del tatuaje. Bienvenido a la familia Monumby.",
+    "cta": "CONOCE NUESTROS PRODUCTOS"
+  },
+  "Contacto": {
+    "title": "CONTÁCTANOS",
+    "description": "¿Tienes preguntas sobre nuestros productos? ¿Quieres ser distribuidor? Estamos aquí para ayudarte. Completa el formulario y te responderemos lo antes posible.",
+    "emailTitle": "Email",
+    "instagramTitle": "Instagram",
+    "whatsappTitle": "WhatsApp",
+    "whatsappAlt": "WhatsApp",
+    "namePlaceholder": "Tu nombre completo",
+    "emailPlaceholder": "Tu correo electrónico",
+    "messagePlaceholder": "Cuéntanos cómo podemos ayudarte...",
+    "newsletterOptIn": "Quiero recibir novedades y promociones de Monumby",
+    "submit": "ENVIAR MENSAJE",
+    "submitMessage": "✅ ¡Mensaje enviado! Nos pondremos en contacto pronto.",
+    "sending": "Enviando...",
+    "errorMessage": "❌ Error al enviar. Por favor, intenta de nuevo."
+  },
+  "FAQ": {
+    "pageTitle": "PREGUNTAS FRECUENTES",
+    "pageDescription": "Encuentra respuestas a las preguntas más comunes sobre Monumby y nuestros productos premium para tatuadores profesionales.",
+    "monumby": {
+      "title": "Sobre Monumby",
+      "q1": "¿Qué es Monumby?",
+      "a1": "Monumby es la línea premium de No Pain Brand, diseñada específicamente para tatuadores profesionales que buscan productos de la más alta calidad. Mother of Numby, nuestra crema anestésica insignia, ofrece 3 veces más contenido que las cremas tradicionales, con una fórmula ultra-concentrada para sesiones de tatuaje prolongadas.",
+      "q2": "¿En qué se diferencia Monumby de No Pain?",
+      "a2": "Mientras No Pain ofrece soluciones accesibles para todos, Monumby representa lo mejor de lo mejor: mayor concentración, mayor cantidad de producto, texturas premium, aromas exclusivos y eficacia comprobada en sesiones de gran escala. Es la elección de artistas profesionales que no comprometen la calidad.",
+      "q3": "¿Dónde puedo comprar productos Monumby?",
+      "a3": "Monumby está disponible a través de distribuidores autorizados en toda Latinoamérica. Contáctanos para encontrar el distribuidor más cercano o para consultas sobre distribución mayorista.",
+      "q4": "¿Cuánto tiempo de efecto tiene Mother of Numby?",
+      "a4": "Mother of Numby proporciona un bloqueo completo del dolor después de 90-120 minutos de aplicación, con un efecto que puede durar toda la sesión de tatuaje, incluso en trabajos de 6-8 horas. Su fórmula ultra-concentrada garantiza confort máximo durante todo el proceso.",
+      "q5": "¿Los productos Monumby son seguros?",
+      "a5": "Absolutamente. Todos nuestros productos están formulados con ingredientes de grado farmacéutico, probados dermatológicamente y cumplen con todas las normativas internacionales. Además, están probados por tatuadores profesionales en condiciones reales de trabajo."
+    },
+    "tintas": {
+      "title": "Tintas Monumby",
+      "q1": "¿Qué hace especiales a las tintas Monumby?",
+      "a1": "Nuestras tintas son formuladas con pigmentos de la más alta calidad, ofreciendo colores vibrantes, consistencia perfecta y cicatrización óptima. Cada lote es probado para garantizar esterilidad y performance excepcional en la piel.",
+      "q2": "¿Las tintas Monumby son veganas?",
+      "a2": "Sí, todas nuestras tintas son 100% veganas y libres de crueldad animal. No contienen productos de origen animal ni han sido probadas en animales.",
+      "q3": "¿Cómo debo almacenar las tintas?",
+      "a3": "Guarda las tintas en un lugar fresco y seco, alejadas de la luz solar directa. Mantén los envases bien cerrados cuando no estén en uso. Con el cuidado adecuado, mantienen su calidad óptima hasta la fecha de caducidad.",
+      "q4": "¿Las tintas Monumby están reguladas?",
+      "a4": "Sí, nuestras tintas cumplen con todas las regulaciones internacionales incluyendo EU REACH y normas de seguridad de pigmentos. Cada producto incluye certificados de esterilidad y composición."
+    },
+    "cremas": {
+      "title": "Cremas y Cuidado",
+      "q1": "¿Puedo usar Mother of Numby en pieles sensibles?",
+      "a1": "Mother of Numby está formulada para ser efectiva pero gentil. Sin embargo, recomendamos hacer una prueba en un área pequeña 24 horas antes si el cliente tiene piel muy sensible o historial de alergias. En caso de reacción, discontinúa el uso inmediatamente.",
+      "q2": "¿El Serum Cicatrizante ayuda realmente a la cicatrización?",
+      "a2": "Sí, nuestro serum contiene ingredientes activos como pantenol, alantoína y extractos naturales que aceleran la regeneración celular, reducen la inflamación y mantienen la piel hidratada. Los tatuajes tratados con nuestro serum cicatrizan más rápido y con colores más brillantes.",
+      "q3": "¿Con qué frecuencia debo aplicar el serum después de tatuar?",
+      "a3": "Aplica una capa delgada 2-3 veces al día después de limpiar suavemente el tatuaje. Durante los primeros 3-5 días es cuando el serum trabaja más efectivamente. Continúa hasta que la piel esté completamente sanada (típicamente 2 semanas).",
+      "q4": "¿Puedo combinar productos Monumby con otras marcas?",
+      "a4": "Aunque nuestros productos están diseñados para trabajar juntos en sinergia, son compatibles con otros productos de calidad. Sin embargo, para obtener los mejores resultados, recomendamos usar la línea completa Monumby: desde la anestesia hasta el cuidado post-tatuaje."
+    },
+    "ctaTitle": "¿Aún tienes dudas?",
+    "ctaText": "Nuestro equipo está listo para ayudarte. Contáctanos y resolveremos todas tus preguntas sobre productos Monumby.",
+    "ctaButton": "CONTÁCTANOS AHORA"
+    },
+    "Privacy": {
+      "title": "POLÍTICA DE PRIVACIDAD",
+      "lastUpdated": "Última actualización",
+      "updateDate": "Octubre 2025",
+      "section1": {
+        "title": "1. Introducción",
+        "p1": "En Monumby, valoramos y respetamos tu privacidad. Esta Política de Privacidad describe cómo recopilamos, usamos y protegemos tu información personal cuando visitas nuestro sitio web y utilizas nuestros servicios.",
+        "p2": "Al usar nuestro sitio web, aceptas las prácticas descritas en esta política. Si no estás de acuerdo con estas prácticas, te pedimos que no uses nuestros servicios."
+      },
+      "section2": {
+        "title": "2. Información que Recopilamos",
+        "p1": "Podemos recopilar los siguientes tipos de información:",
+        "item1": "Información de contacto: nombre, correo electrónico, número de teléfono cuando te contactas con nosotros o te suscribes a nuestro boletín.",
+        "item2": "Información de navegación: dirección IP, tipo de navegador, páginas visitadas y tiempo de visita a través de cookies y tecnologías similares.",
+        "item3": "Información de pedidos: detalles de productos adquiridos, información de envío y facturación cuando realizas una compra.",
+        "item4": "Comunicaciones: contenido de mensajes cuando te comunicas con nuestro equipo de soporte."
+      },
+      "section3": {
+        "title": "3. Cómo Usamos tu Información",
+        "p1": "Utilizamos la información recopilada para proporcionar, mantener y mejorar nuestros servicios, procesar pedidos, responder a consultas, enviar actualizaciones sobre productos y promociones (si has dado tu consentimiento), y analizar el uso del sitio web para mejorar la experiencia del usuario.",
+        "p2": "No vendemos, alquilamos ni compartimos tu información personal con terceros para fines de marketing sin tu consentimiento explícito."
+      },
+      "section4": {
+        "title": "4. Seguridad de los Datos",
+        "p1": "Implementamos medidas de seguridad técnicas y organizativas para proteger tu información contra acceso no autorizado, pérdida o alteración. Sin embargo, ningún método de transmisión por Internet es 100% seguro, por lo que no podemos garantizar seguridad absoluta."
+      },
+      "section5": {
+        "title": "5. Tus Derechos",
+        "p1": "Tienes derecho a acceder, corregir o eliminar tu información personal, oponerte al procesamiento de tus datos, y retirar tu consentimiento en cualquier momento. Para ejercer estos derechos, contáctanos a través de nuestros canales de comunicación."
+      },
+      "section6": {
+        "title": "6. Cambios a esta Política",
+        "p1": "Nos reservamos el derecho de actualizar esta Política de Privacidad en cualquier momento. Te notificaremos sobre cambios significativos publicando la nueva política en esta página con una fecha de actualización revisada."
+      },
+      "questions": "¿Tienes preguntas sobre nuestra política de privacidad?",
+      "contactButton": "CONTÁCTANOS"
+    },
+    "Terms": {
+      "title": "TÉRMINOS DE USO",
+      "lastUpdated": "Última actualización",
+      "updateDate": "Octubre 2025",
+      "section1": {
+        "title": "1. Aceptación de Términos",
+        "p1": "Al acceder y utilizar el sitio web de Monumby, aceptas estar sujeto a estos Términos de Uso y todas las leyes y regulaciones aplicables. Si no estás de acuerdo con alguno de estos términos, no debes usar este sitio.",
+        "p2": "Nos reservamos el derecho de modificar estos términos en cualquier momento. Es tu responsabilidad revisar periódicamente estos términos para estar al tanto de las actualizaciones."
+      },
+      "section2": {
+        "title": "2. Uso del Sitio Web",
+        "p1": "Al usar nuestro sitio web, te comprometes a:",
+        "item1": "Proporcionar información precisa y actualizada cuando sea requerida.",
+        "item2": "No usar el sitio para propósitos ilegales o no autorizados.",
+        "item3": "No intentar acceder a áreas restringidas del sitio o interferir con su funcionamiento."
+      },
+      "section3": {
+        "title": "3. Productos y Servicios",
+        "p1": "Todos los productos y servicios están sujetos a disponibilidad. Nos reservamos el derecho de limitar cantidades, descontinuar productos o rechazar pedidos a nuestra discreción. Los precios están sujetos a cambios sin previo aviso."
+      },
+      "section4": {
+        "title": "4. Propiedad Intelectual",
+        "p1": "Todo el contenido del sitio web de Monumby, incluyendo texto, gráficos, logos, imágenes y software, es propiedad de Monumby o sus licenciantes y está protegido por leyes de propiedad intelectual. No puedes reproducir, distribuir o crear obras derivadas sin nuestro permiso expreso por escrito."
+      },
+      "section5": {
+        "title": "5. Limitación de Responsabilidad",
+        "p1": "Monumby no será responsable por daños indirectos, incidentales, especiales o consecuentes que resulten del uso o la imposibilidad de usar nuestros productos o servicios, incluso si hemos sido advertidos de la posibilidad de tales daños."
+      },
+      "section6": {
+        "title": "6. Uso de Productos",
+        "p1": "Nuestros productos están diseñados para uso profesional por tatuadores capacitados. Es responsabilidad del usuario seguir todas las instrucciones de uso y precauciones de seguridad. Monumby no se hace responsable del mal uso de los productos."
+      },
+      "section7": {
+        "title": "7. Ley Aplicable",
+        "p1": "Estos términos se regirán e interpretarán de acuerdo con las leyes aplicables, sin dar efecto a ningún principio de conflictos de leyes. Cualquier disputa relacionada con estos términos estará sujeta a la jurisdicción exclusiva de los tribunales competentes."
+      },
+      "questions": "¿Tienes preguntas sobre nuestros términos de uso?",
+      "contactButton": "CONTÁCTANOS"
   }
 }
