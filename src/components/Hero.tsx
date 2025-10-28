@@ -26,6 +26,8 @@ export default function Hero({ locale }: { locale: string }) {
   const [currentSlide, setCurrentSlide] = useState(0);
   // If the video isn't available in production (e.g., excluded from repo), show an image fallback
   const [videoOk, setVideoOk] = useState(true);
+  // Prefer reading a hosted video URL from env (Blob/CDN/YouTube direct file URL)
+  const videoUrl = (process.env.NEXT_PUBLIC_VIDEO_URL as string | undefined) ?? undefined;
 
   const products = [
     {
@@ -184,7 +186,7 @@ export default function Hero({ locale }: { locale: string }) {
                 poster="/_V8A8062-26.jpg"
                 onError={() => setVideoOk(false)}
               >
-                <source src="/NOPAIN COMERCIAL.mp4" type="video/mp4" />
+                <source src={videoUrl ?? "/NOPAIN COMERCIAL.mp4"} type="video/mp4" />
                 {t('videoNotSupported')}
               </video>
             ) : (
