@@ -24,6 +24,8 @@ import product14Image from '../../public/Screenshot 2025-10-27 165250.png';
 export default function Hero({ locale }: { locale: string }) {
   const t = useTranslations('Hero');
   const [currentSlide, setCurrentSlide] = useState(0);
+  // If the video isn't available in production (e.g., excluded from repo), show an image fallback
+  const [videoOk, setVideoOk] = useState(true);
 
   const products = [
     {
@@ -172,15 +174,27 @@ export default function Hero({ locale }: { locale: string }) {
         <div className="hero-video-content">
           {/* Video on the left */}
           <div className="video-wrapper aspect-video">
-            <video 
-              className="hero-video w-full h-full object-cover"
-              controls
-              loop
-              playsInline
-            >
-              <source src="/NOPAIN COMERCIAL.mp4" type="video/mp4" />
-              {t('videoNotSupported')}
-            </video>
+            {videoOk ? (
+              <video
+                className="hero-video w-full h-full object-cover"
+                controls
+                loop
+                playsInline
+                preload="metadata"
+                poster="/_V8A8062-26.jpg"
+                onError={() => setVideoOk(false)}
+              >
+                <source src="/NOPAIN COMERCIAL.mp4" type="video/mp4" />
+                {t('videoNotSupported')}
+              </video>
+            ) : (
+              <Image
+                src={product11Image}
+                alt="Monumby video placeholder"
+                className="hero-video w-full h-full object-cover"
+                priority
+              />
+            )}
           </div>
 
           {/* Text on the right */}
