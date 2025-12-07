@@ -14,6 +14,12 @@
     "videoTitle": "Descubre la Experiencia Monumby",
     "videoParagraph1": "Mother of Numby es la nueva crema anestésica de No Pain, probada por el artista Emanuel Tres Palacios (Medellín, 10–12 años de experiencia). Primera impresión: trae 3 veces más contenido que No Pain, aroma distinto y una textura más manejable y fácil de aplicar.",
     "videoParagraph2": "Se aplica cubriendo la piel y se espera 90–120 minutos para el bloqueo completo. A los 4 días, la pieza cicatrizó muy rápido y sin efectos secundarios; por el contrario, ayudó a la cicatrización. Conclusión: Mother of Numby, altamente recomendada para artistas.",
+    "videoTitle2": "Guía de Aplicación de Anestesia",
+    "videoParagraph2_1": "Aprende la técnica correcta para aplicar la crema anestésica y maximizar la comodidad. Nuestra guía experta te muestra el proceso paso a paso para garantizar adormecimiento óptimo para tus clientes.",
+    "videoParagraph2_2": "Descubre cómo preparar la piel, aplicar uniformemente y lograr resultados consistentes cada vez. Con Monumby, tus clientes experimentan verdadera comodidad sin compromisos.",
+    "videoTitle3": "Resultados Profesionales con Monumby",
+    "videoParagraph3_1": "Observa resultados reales de artistas profesionales usando productos Monumby. Ve cómo nuestra línea premium ofrece comodidad superior y cicatrización más rápida para obras de arte impresionantes.",
+    "videoParagraph3_2": "Desde la aplicación hasta la recuperación, el sistema completo de cuidado de Monumby asegura que tus clientes se vayan satisfechos y tu arte cicatrice perfectamente. Esta es la diferencia Monumby.",
     "videoNotSupported": "Tu navegador no soporta la reproducción de video.",
     "product1": {
       "name": "Mother of Numby",
@@ -42,9 +48,23 @@
     "product7": {
       "name": "Suero y Spray Monumby",
       "description": "El suero y spray de Monumby, aliados esenciales del tatuaje, se alían con la precisión del artista para un proceso más suave y profesional. ¡Confía en Monumby para que cada sesión deje huella con comodidad y estilo!"
-    }
-    ,
-    "cta": "DESCUBRE MÁS"
+    },
+    "carouselText1": "Mother of Numby es el secreto de los artistas profesionales. Con 50% de activos anestésicos y una fórmula sin vasoconstrictores, garantiza 90-120 minutos de confort absoluto. Cicatrización acelerada, resultados perfectos.",
+    "carouselText2": "Después del arte viene la sanación. Nuestro Suero Monumby acelera la recuperación con una fórmula cicatrizante que protege los colores y mantiene la piel hidratada. Tu tatuaje merece el mejor cuidado.",
+    "carouselText3": "La limpieza es el primer paso. Con Tónico de Hamamelis 100% natural, desinfectas profesionalmente sin comprometer la delicadeza de tu piel. Astrincente, seguro, efectivo.",
+    "carouselText4": "Glow es más que un suero: es la promesa de una recuperación radiante. Hidratación profunda + cicatrización rápida = colores vibrantes que duran. Cada gota es magia para tu arte.",
+    "carouselText5": "Monumby es movimiento. Es la fusión de innovación y tradición en cada aplicación. Desde el primer momento, tu cliente sentirá la diferencia. Ese es el poder de Monumby.",
+    "carouselText6": "Suero puro Monumby. Cuidado esencial post-tatuaje que acelera la sanación mientras protege cada pigmento. Ligero, rápido de absorber, eficaz. Lo que necesitan tus tatuajes después de cada sesión.",
+    "carouselText7": "Cuando necesitas control total: suero + spray. La combinación perfecta para el cuidado profesional. Hidrata, protege y desinfecta en un mismo paso. Confianza total para artistas exigentes.",
+    "carouselText8": "El Suero Cicatrizante es tu aliado invisible. Mientras tu cliente descansa, la fórmula trabaja: cicatrización acelerada, inflamación reducida, colores preservados. Resultados que hablan por sí solos.",
+    "carouselText9": "Protección desde adentro. El Tónico de Hamamelis penetra profundamente, combatiendo bacterias y restaurando el equilibrio de la piel. Natural, potente, profesional. El cuidado que exigen los estándares más altos.",
+    "carouselText10": "Segunda aplicación, doble resultado. Suero Monumby como base cicatrizante, repetido durante los primeros días: recuperación garantizada. Tu cliente verá la diferencia desde el día uno.",
+    "carouselText11": "Tónico antiséptico para cada jornada. Usa Hamamelis entre sesiones para mantener la limpieza antibacteriana. Prevención es mejor que curación. Así pensamos en Monumby.",
+    "carouselText12": "Monumby holístico: anestesia, serums y tónicos trabajando juntos. Desde la sesión hasta la cicatrización completa, cada paso está optimizado. Eso es profecionalismo Monumby.",
+    "carouselText13": "El cuidado comienza aquí: con anestesia que no duele, suero que sana rápido y tónico que protege. Mother of Numby inicia la magia; nuestros serums la completean. Arte seguro, cliente feliz.",
+    "carouselText14": "Final perfecto: Serum Glow es la última pieza del rompecabezas. Después de cicatrizar, deja tu tatuaje radiante, húmedo, proteido. La culminación del cuidado Monumby.",
+    "carouselText15": "Tónico Hamamelis: el guardián silencioso. Antiséptico, cicatrizante, seguro. Úsalo en cada etapa del cuidado post-tatuaje. Monumby es completitud, y cada producto es esencial.",
+    "carouselText16": "Cierra el círculo con Glow. Hidratación, brillo, protección. El último serum que tus clientes necesitan para que su tatuaje sea una obra maestra completamente sanada y radiante."
   },
   "Testimonials": {
     "title": "VOCES DE ALMAS AUDACES",
@@ -84,24 +104,24 @@
     "subtitle": "Los tres pilares de Monumby para el cuidado profesional del tatuaje",
     "product1": {
       "name": "Mother of Numby",
-      "description": "Anestesia tópica ultra-concentrada diseñada para sesiones de tatuaje extensas.",
-      "feature1": "Efecto prolongado de 1-5 horas",
-      "feature2": "Fórmula natural con agentes antiinflamatorios",
-      "feature3": "No altera los tonos de pigmentación"
+      "description": "Anestesia tópica ultra-concentrada con 50% de agentes activos. Formulada con bloqueadores de canales de sodio y compuestos antiinflamatorios, analgésicos y antibacterianos potenciados. Duración extendida (90 minutos - 2 horas) sin vasoconstrictores. Protege la integridad del pigmento.",
+      "feature1": "50% de concentración de agentes activos",
+      "feature2": "Formulación antiinflamatoria y segura para pigmentos",
+      "feature3": "Garantía libre de vasoconstrictores"
     },
     "product2": {
-      "name": "Suero Cicatrizante Monumby",
-      "description": "Acelerador de recuperación con extractos naturales premium.",
-      "feature1": "Reduce inflamación y enrojecimiento",
-      "feature2": "Hidratación profunda sin obstruir poros",
-      "feature3": "Protege y realza los colores del tatuaje"
+      "name": "Monumby Healing Serum",
+      "description": "Serum cicatrizante avanzado con fórmula dual (oleosa + acuosa). Combina ingredientes activos ultra-concentrados con tecnología de absorción rápida. Presentación 15ML para protocolo completo de cuidado post-tatuaje.",
+      "feature1": "Textura ligera con absorción rápida",
+      "feature2": "Fórmula con extractos grasos regeneradores",
+      "feature3": "Ingredientes activos ultra-concentrados"
     },
     "product3": {
-      "name": "Tónico de Hamamelis Monumby",
-      "description": "Limpiador antibacteriano para preparación y cuidado post-tattoo.",
-      "feature1": "Limpieza profunda sin irritación",
-      "feature2": "Propiedades antibacterianas naturales",
-      "feature3": "Calma y prepara la piel"
+      "name": "Monumby Witch Hazel Tonic",
+      "description": "Tónico Hamamelis virginiana destilado al 100% natural. Acción astringente con propiedades de distribución uniforme de pigmentos. Fórmula versátil para preparación y cuidado post-tatuaje. Presentación 150ML.",
+      "feature1": "100% natural - Hamamelis destilada",
+      "feature2": "Acción astringente para uniformidad de pigmentos",
+      "feature3": "Uso versátil en preparación y cuidado"
     },
     "cta": "CONTACTAR",
     "back": "Volver al inicio"
@@ -167,16 +187,16 @@
     "pageDescription": "Encuentra respuestas a las preguntas más comunes sobre Monumby y nuestros productos premium para tatuadores profesionales.",
     "monumby": {
       "title": "Sobre Monumby",
-      "q1": "¿Qué es Monumby?",
-      "a1": "Monumby es la línea premium de No Pain Brand, diseñada específicamente para tatuadores profesionales que buscan productos de la más alta calidad. Mother of Numby, nuestra crema anestésica insignia, ofrece 3 veces más contenido que las cremas tradicionales, con una fórmula ultra-concentrada para sesiones de tatuaje prolongadas.",
-      "q2": "¿En qué se diferencia Monumby de No Pain?",
-      "a2": "Mientras No Pain ofrece soluciones accesibles para todos, Monumby representa lo mejor de lo mejor: mayor concentración, mayor cantidad de producto, texturas premium, aromas exclusivos y eficacia comprobada en sesiones de gran escala. Es la elección de artistas profesionales que no comprometen la calidad.",
-      "q3": "¿Dónde puedo comprar productos Monumby?",
-      "a3": "Monumby está disponible a través de distribuidores autorizados en toda Latinoamérica. Contáctanos para encontrar el distribuidor más cercano o para consultas sobre distribución mayorista.",
-      "q4": "¿Cuánto tiempo de efecto tiene Mother of Numby?",
-      "a4": "Mother of Numby proporciona un bloqueo completo del dolor después de 90-120 minutos de aplicación, con un efecto que puede durar toda la sesión de tatuaje, incluso en trabajos de 6-8 horas. Su fórmula ultra-concentrada garantiza confort máximo durante todo el proceso.",
+      "q1": "¿Qué es Mother of Numby?",
+      "a1": "Mother of Numby es una anestesia tópica ultra-concentrada con 50% de agentes activos, formulada con bloqueadores de canales de sodio y compuestos antiinflamatorios, analgésicos y antibacterianos potenciados. Proporciona duración extendida (90 minutos - 2 horas) sin vasoconstrictores, protegiendo la integridad del pigmento.",
+      "q2": "¿Cuánto tiempo tarda en hacer efecto Mother of Numby?",
+      "a2": "Aplicada correctamente, Mother of Numby comienza a actuar en 90-120 minutos y proporciona un bloqueo completo del dolor. El efecto puede durar toda la sesión de tatuaje, incluso en trabajos extensos de 6-8 horas, dependiendo del organismo individual.",
+      "q3": "¿Monumby Healing Serum acelera la cicatrización?",
+      "a3": "Sí. Nuestro serum cicatrizante con fórmula dual (oleosa + acuosa) combina ingredientes activos ultra-concentrados con tecnología de absorción rápida. Acelera la regeneración celular, reduce inflamación y mantiene la piel hidratada, logrando tatuajes que cicatrizan más rápido con colores más brillantes.",
+      "q4": "¿Para qué sirve el Tónico de Hamamelis?",
+      "a4": "Es un tónico Hamamelis virginiana destilado al 100% natural con acción astringente que distribuye uniformemente los pigmentos. Se utiliza tanto en preparación como en cuidado post-tatuaje, previniendo irritaciones y ayudando a que la tinta se distribuya de manera uniforme.",
       "q5": "¿Los productos Monumby son seguros?",
-      "a5": "Absolutamente. Todos nuestros productos están formulados con ingredientes de grado farmacéutico, probados dermatológicamente y cumplen con todas las normativas internacionales. Además, están probados por tatuadores profesionales en condiciones reales de trabajo."
+      "a5": "Absolutamente. Todos nuestros productos están formulados con ingredientes de grado farmacéutico, probados dermatológicamente y cumplen con todas las normativas internacionales. Están probados por tatuadores profesionales en condiciones reales de trabajo y libres de vasoconstrictores dañinos."
     },
     "tintas": {
       "title": "Tintas Monumby",
@@ -190,15 +210,15 @@
       "a4": "Sí, nuestras tintas cumplen con todas las regulaciones internacionales incluyendo EU REACH y normas de seguridad de pigmentos. Cada producto incluye certificados de esterilidad y composición."
     },
     "cremas": {
-      "title": "Cremas y Cuidado",
+      "title": "Cuidado y Productos",
       "q1": "¿Puedo usar Mother of Numby en pieles sensibles?",
-      "a1": "Mother of Numby está formulada para ser efectiva pero gentil. Sin embargo, recomendamos hacer una prueba en un área pequeña 24 horas antes si el cliente tiene piel muy sensible o historial de alergias. En caso de reacción, discontinúa el uso inmediatamente.",
-      "q2": "¿El Serum Cicatrizante ayuda realmente a la cicatrización?",
-      "a2": "Sí, nuestro serum contiene ingredientes activos como pantenol, alantoína y extractos naturales que aceleran la regeneración celular, reducen la inflamación y mantienen la piel hidratada. Los tatuajes tratados con nuestro serum cicatrizan más rápido y con colores más brillantes.",
-      "q3": "¿Con qué frecuencia debo aplicar el serum después de tatuar?",
-      "a3": "Aplica una capa delgada 2-3 veces al día después de limpiar suavemente el tatuaje. Durante los primeros 3-5 días es cuando el serum trabaja más efectivamente. Continúa hasta que la piel esté completamente sanada (típicamente 2 semanas).",
-      "q4": "¿Puedo combinar productos Monumby con otras marcas?",
-      "a4": "Aunque nuestros productos están diseñados para trabajar juntos en sinergia, son compatibles con otros productos de calidad. Sin embargo, para obtener los mejores resultados, recomendamos usar la línea completa Monumby: desde la anestesia hasta el cuidado post-tatuaje."
+      "a1": "Mother of Numby está formulada para ser efectiva pero gentil. Sin embargo, recomendamos hacer una prueba en un área pequeña 24 horas antes si el cliente tiene piel muy sensible o historial de alergias. No contiene vasoconstrictores ni agentes dañinos para la cicatrización.",
+      "q2": "¿Cómo debo aplicar Mother of Numby correctamente?",
+      "a2": "Aplica una capa generosa cubriendo toda la zona a tatuar. Espera 90-120 minutos para el bloqueo completo. Se puede aplicar antes o con la piel abierta sin afectar el resultado de los pigmentos ni la cicatrización. Abarca aproximadamente 45cm de diámetro.",
+      "q3": "¿Con qué frecuencia debo aplicar Monumby Healing Serum?",
+      "a3": "Aplica una capa delgada 2-3 veces al día después de limpiar suavemente el tatuaje con el Tónico de Hamamelis. Durante los primeros 3-5 días es cuando el serum trabaja más efectivamente. Continúa hasta que la piel esté completamente sanada (típicamente 2 semanas).",
+      "q4": "¿Cuál es el protocolo completo de cuidado Monumby?",
+      "a4": "Protocolo profesional: (1) Limpia con Tónico de Hamamelis para asegurar distribución uniforme de pigmentos. (2) Aplica Mother of Numby 90-120 minutos antes. (3) Post-tatuaje aplica Monumby Healing Serum 2-3 veces diarias. (4) Continúa con el serum hasta cicatrización completa. Este protocolo integrado optimiza resultados."
     },
     "ctaTitle": "¿Aún tienes dudas?",
     "ctaText": "Nuestro equipo está listo para ayudarte. Contáctanos y resolveremos todas tus preguntas sobre productos Monumby.",

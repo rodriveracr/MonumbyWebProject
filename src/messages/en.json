@@ -12,8 +12,14 @@
     "title": "MOTHER OF NUMBY",
     "slogan": "MOTHER OF NUMBY IS THE PREMIUM LINE OF NO PAIN.",
     "videoTitle": "Discover the Monumby Experience",
-    "videoParagraph1": "Mother of Numby is No Pain’s new anesthetic cream, tested by tattoo artist Emanuel Tres Palacios (Medellín, 10–12 years of experience). First take: it contains 3× more than No Pain, has a different scent, and a smoother, easier-to-apply texture.",
+    "videoParagraph1": "Mother of Numby is No Pain's new anesthetic cream, tested by tattoo artist Emanuel Tres Palacios (Medellín, 10–12 years of experience). First take: it contains 3× more than No Pain, has a different scent, and a smoother, easier-to-apply texture.",
     "videoParagraph2": "Apply by covering the skin and wait 90–120 minutes for full numbness. After 4 days, the piece healed very fast with no side effects; it actually aided healing. Conclusion: Mother of Numby—highly recommended for artists.",
+    "videoTitle2": "Anesthesia Application Guide",
+    "videoParagraph2_1": "Learn the proper technique for applying anesthetic cream to maximize comfort and effectiveness. Our expert guide shows you the step-by-step process to ensure optimal numbing for your clients.",
+    "videoParagraph2_2": "Discover how to prepare the skin, apply evenly, and achieve consistent results every time. With Monumby, your clients experience true comfort without compromise.",
+    "videoTitle3": "Professional Results with Monumby",
+    "videoParagraph3_1": "See real-world results from professional tattoo artists using Monumby products. Watch how our premium line delivers superior comfort and faster healing for stunning artwork.",
+    "videoParagraph3_2": "From application to recovery, Monumby's complete care system ensures your clients leave happy and your artwork heals perfectly. This is the Monumby difference.",
     "videoNotSupported": "Your browser does not support video playback.",
     "product1": {
       "name": "Mother of Numby",
@@ -42,9 +48,23 @@
     "product7": {
       "name": "Monumby Serum & Spray",
       "description": "Monumby's serum and spray, essential tattoo allies, combine with the artist's precision for a smoother, more professional process. Trust Monumby to make every session memorable with comfort and style!"
-    }
-    ,
-    "cta": "DISCOVER MORE"
+    },
+    "carouselText1": "Mother of Numby is the secret of professional artists. With 50% anesthetic actives and a vasoconstrictor-free formula, it guarantees 90-120 minutes of absolute comfort. Accelerated healing, perfect results.",
+    "carouselText2": "After art comes healing. Our Monumby Serum accelerates recovery with a formula that protects colors and keeps skin hydrated. Your tattoo deserves the best care.",
+    "carouselText3": "Cleansing is the first step. With 100% natural Witch Hazel Tonic, you disinfect professionally without compromising skin delicacy. Astringent, safe, effective.",
+    "carouselText4": "Glow is more than a serum: it's the promise of radiant recovery. Deep hydration + fast healing = vibrant colors that last. Every drop is magic for your art.",
+    "carouselText5": "Monumby is movement. It's the fusion of innovation and tradition in every application. From the first moment, your client will feel the difference. That's the power of Monumby.",
+    "carouselText6": "Pure Monumby Serum. Essential post-tattoo care that accelerates healing while protecting every pigment. Light, quick-absorbing, effective. What your tattoos need after every session.",
+    "carouselText7": "When you need total control: serum + spray. The perfect combination for professional care. Hydrates, protects, and disinfects in one step. Complete confidence for demanding artists.",
+    "carouselText8": "The Healing Serum is your invisible ally. While your client rests, the formula works: accelerated healing, reduced inflammation, colors preserved. Results that speak for themselves.",
+    "carouselText9": "Protection from within. Witch Hazel Tonic penetrates deeply, fighting bacteria and restoring skin balance. Natural, powerful, professional. The care that meets the highest standards.",
+    "carouselText10": "Second application, double result. Monumby Serum as a healing base, repeated during the first days: guaranteed recovery. Your client will see the difference from day one.",
+    "carouselText11": "Antiseptic tonic for every session. Use Witch Hazel between appointments to maintain antibacterial cleansing. Prevention is better than cure. That's how we think at Monumby.",
+    "carouselText12": "Holistic Monumby: anesthetic, serums, and tonics working together. From session to complete healing, every step is optimized. That's Monumby professionalism.",
+    "carouselText13": "Care starts here: with anesthesia that doesn't hurt, serum that heals fast, and tonic that protects. Mother of Numby begins the magic; our serums complete it. Safe art, happy client.",
+    "carouselText14": "Perfect ending: Glow Serum is the final piece of the puzzle. After healing, leave your tattoo radiant, moisturized, protected. The culmination of Monumby care.",
+    "carouselText15": "Witch Hazel Tonic: the silent guardian. Antiseptic, healing, safe. Use it at every stage of post-tattoo care. Monumby is completeness, and every product is essential.",
+    "carouselText16": "Close the circle with Glow. Hydration, radiance, protection. The final serum your clients need to make their tattoo a completely healed and radiant masterpiece."
   },
   "Testimonials": {
     "title": "VOICES OF BOLD SOULS",
@@ -84,24 +104,24 @@
     "subtitle": "Monumby's three pillars of professional tattoo care",
     "product1": {
       "name": "Mother of Numby",
-      "description": "Ultra-concentrated topical anesthetic designed for extended tattoo sessions.",
-      "feature1": "Long-lasting effect of 1-5 hours",
-      "feature2": "Natural formula with anti-inflammatory agents",
-      "feature3": "Does not alter pigmentation tones"
+      "description": "Ultra-concentrated topical anesthetic with 50% active agents. Formulated with sodium channel blockers and potentiated antiinflamatory, analgésic, and antibacterial compounds. Extended duration (90 minutes - 2 hours) without vasoconstrictors. Protects pigmentation integrity.",
+      "feature1": "50% active agents concentration",
+      "feature2": "Antiinflamatory and pigment-safe formulation",
+      "feature3": "Vasoconstrictors-free guarantee"
     },
     "product2": {
       "name": "Monumby Healing Serum",
-      "description": "Recovery accelerator with premium natural extracts.",
-      "feature1": "Reduces inflammation and redness",
-      "feature2": "Deep hydration without clogging pores",
-      "feature3": "Protects and enhances tattoo colors"
+      "description": "Advanced cicatrizante serum with dual formulation (oleosa + acuosa). Combines ultra-concentrated active ingredients with rapid absorption technology. 15ML presentation for complete post-tattoo care protocol.",
+      "feature1": "Light texture with rapid absorption",
+      "feature2": "Regenerative fat extracts formula",
+      "feature3": "Ultra-concentrated active ingredients"
     },
     "product3": {
       "name": "Monumby Witch Hazel Tonic",
-      "description": "Antibacterial cleanser for preparation and post-tattoo care.",
-      "feature1": "Deep cleansing without irritation",
-      "feature2": "Natural antibacterial properties",
-      "feature3": "Soothes and prepares the skin"
+      "description": "100% natural Hamamelis virginiana distilled tonic. Astringent action with uniform pigment distribution properties. Versatile formula for preparation and post-tattoo care. 150ML presentation.",
+      "feature1": "100% natural origin - Hamamelis destilada",
+      "feature2": "Astringent action for pigment uniformity",
+      "feature3": "Versatile preparation and care use"
     },
     "cta": "CONTACT US",
     "back": "Back to home"

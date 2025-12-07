@@ -1,4 +1,5 @@
 'use client';
+/* eslint-disable jsx-a11y/aria-proptypes */
 import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
@@ -22,15 +23,6 @@ export default function FAQPage() {
         { q: t('monumby.q3'), a: t('monumby.a3') },
         { q: t('monumby.q4'), a: t('monumby.a4') },
         { q: t('monumby.q5'), a: t('monumby.a5') },
-      ],
-    },
-    {
-      title: t('tintas.title'),
-      questions: [
-        { q: t('tintas.q1'), a: t('tintas.a1') },
-        { q: t('tintas.q2'), a: t('tintas.a2') },
-        { q: t('tintas.q3'), a: t('tintas.a3') },
-        { q: t('tintas.q4'), a: t('tintas.a4') },
       ],
     },
     {
@@ -75,6 +67,7 @@ export default function FAQPage() {
               <div className="faq-questions">
                 {category.questions.map((item, qIndex) => {
                   const currentIndex = questionIndex++;
+                  const isOpen = openIndex === currentIndex;
                   return (
                     <div
                       key={qIndex}
@@ -85,7 +78,7 @@ export default function FAQPage() {
                         onClick={() => toggleQuestion(currentIndex)}
                         className="faq-question-button"
                         id={`faq-button-${currentIndex}`}
-                          aria-expanded={openIndex === currentIndex}
+                        aria-expanded={isOpen ? 'true' : 'false'}
                         aria-controls={`faq-panel-${currentIndex}`}
                       >
                         <span className="faq-question-text">{item.q}</span>

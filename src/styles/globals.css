@@ -1,3 +1,47 @@
+/* ===== TIPOGRAFÍAS ===== */
+
+/* Fuente Principal - Franklin Gothic Demi */
+@font-face {
+  font-family: "FranklinGothicDemi";
+  src: url("/fonts/franklin-gothic-demi.woff2") format("woff2"),
+       url("/fonts/franklin-gothic-demi.woff") format("woff"),
+       url("/fonts/franklin-gothic-demi.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+}
+
+/* Estilos de Tipografía Personalizados */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "FranklinGothicDemi", sans-serif;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.75rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 1.75rem;
+  line-height: 1.4;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  font-family: "FranklinGothicDemi", sans-serif;
+  font-weight: 600;
+}
+
+p, li, a {
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
 /* Hero Mother Image Custom Styles */
 .hero-mother-section {
   position: relative;
@@ -213,28 +257,278 @@
   }
 }
 
-/* Hero Video Section */
-.hero-video-section {
+/* Video Carousel Section */
+.video-carousel-container {
   position: relative;
-  width: 100%;
-  min-height: 120vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 6rem 1rem 4rem;
-  margin-bottom: 10rem;
-}
-
-.hero-video-content {
-  position: relative;
-  z-index: 10;
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+  z-index: 10;
+}
+
+.video-carousel-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-carousel-card {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.video-carousel-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  height: auto;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.4), 0 0 80px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.video-carousel-preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.video-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(243, 255, 92, 0.9);
+  border: none;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
+  z-index: 20;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 30px rgba(243, 255, 92, 0.6);
+}
+
+.video-play-button:hover {
+  background: rgba(243, 255, 92, 1);
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 0 50px rgba(243, 255, 92, 0.8);
+}
+
+.play-icon {
+  width: 32px;
+  height: 32px;
+  color: #111111;
+  margin-left: 4px;
+}
+
+.video-carousel-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.video-carousel-title {
+  font-family: var(--font-heading);
+  font-size: var(--title-uppercase-size);
+  line-height: 1.1;
+  color: var(--color-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 20px rgba(243, 255, 92, 0.6), 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.video-carousel-text {
+  font-family: var(--font-body);
+  font-size: var(--body-text-size);
+  line-height: 1.7;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.video-carousel-dots {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.video-carousel-dots .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.video-carousel-dots .dot.active {
+  background: rgba(243, 255, 92, 0.9);
+  box-shadow: 0 0 12px rgba(243, 255, 92, 0.6);
+  width: 14px;
+  height: 14px;
+}
+
+.video-carousel-dots .dot:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* Video Modal Overlay */
+.video-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.video-modal-content {
+  position: relative;
+  width: 90vw;
+  height: 90vh;
+  max-width: 1200px;
+  max-height: 700px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 100px rgba(243, 255, 92, 0.4);
+}
+
+.video-modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: rgba(243, 255, 92, 0.9);
+  border: none;
+  border-radius: 50%;
+  font-size: 28px;
+  color: #111111;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(243, 255, 92, 0.6);
+}
+
+.video-modal-close:hover {
+  background: rgba(243, 255, 92, 1);
+  transform: scale(1.1);
+  box-shadow: 0 0 40px rgba(243, 255, 92, 0.8);
+}
+
+.video-modal-player {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000000;
+}
+
+/* Responsive Video Carousel */
+@media (max-width: 1024px) {
+  .video-carousel-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .video-carousel-wrapper {
+    max-width: 100%;
+  }
+
+  .video-play-button {
+    width: 70px;
+    height: 70px;
+  }
+
+  .play-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .video-modal-content {
+    width: 95vw;
+    max-height: 80vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-carousel-card {
+    gap: 1.5rem;
+  }
+
+  .video-carousel-wrapper {
+    padding-bottom: 56.25%;
+  }
+
+  .video-play-button {
+    width: 60px;
+    height: 60px;
+  }
+
+  .play-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .video-carousel-title {
+    font-size: 2rem;
+  }
+
+  .video-carousel-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .video-carousel-dots {
+    gap: 0.8rem;
+  }
+
+  .video-carousel-dots .dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .video-carousel-dots .dot.active {
+    width: 12px;
+    height: 12px;
+  }
+
+  .video-modal-close {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    top: 10px;
+    right: 10px;
+  }
 }
 
 .video-wrapper {
@@ -306,7 +600,7 @@
   --color-dark: #111111; /* Alineado con Monumby oficial */
   --color-light: #FFFFFF; /* Pure white for all 'light' text */
   
-  --font-heading: 'Anton', sans-serif;
+  --font-heading: 'FranklinGothicDemi', 'Anton', sans-serif;
   --font-body: 'Open Sans', sans-serif;
   /* Global type scales */
   --title-uppercase-size: clamp(2rem, 5vw, 3rem);
@@ -493,7 +787,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-link {
-  font-family: var(--font-body);
+  font-family: "FranklinGothicDemi", sans-serif;
   font-size: 1rem;
   font-weight: 600;
   color: #ffffff;
@@ -746,8 +1040,38 @@ main {
 }
 
 /* ============================================
-   Hero Premium Section Styles
+   Hero Mother Section - Premium Effects
    ============================================ */
+.hero-woman-image {
+  animation: heroWomanFloat 4s ease-in-out infinite;
+  filter: drop-shadow(0 20px 60px rgba(243, 255, 92, 0.4));
+}
+
+@keyframes heroWomanFloat {
+  0%, 100% {
+    transform: translateY(0) rotateX(0deg) rotateY(-3deg);
+    filter: drop-shadow(0 20px 60px rgba(243, 255, 92, 0.4));
+  }
+  50% {
+    transform: translateY(-20px) rotateX(2deg) rotateY(-3deg);
+    filter: drop-shadow(0 40px 80px rgba(243, 255, 92, 0.6)) drop-shadow(0 0 40px rgba(243, 255, 92, 0.3));
+  }
+}
+
+.hero-woman-image:hover {
+  animation: heroWomanHover 0.6s ease forwards;
+}
+
+@keyframes heroWomanHover {
+  0% {
+    transform: translateY(-20px) rotateX(2deg) rotateY(-3deg);
+    filter: drop-shadow(0 40px 80px rgba(243, 255, 92, 0.6)) drop-shadow(0 0 40px rgba(243, 255, 92, 0.3));
+  }
+  100% {
+    transform: translateY(-35px) rotateX(3deg) rotateY(-5deg) scale(1.02);
+    filter: drop-shadow(0 50px 100px rgba(243, 255, 92, 0.8)) drop-shadow(0 0 60px rgba(243, 255, 92, 0.5));
+  }
+}
 .hero-carousel {
   position: relative;
   width: 100%;
@@ -1917,12 +2241,13 @@ main {
   /* Hero Video Section Mobile */
   .hero-video-section {
     padding: 2rem 0.5rem;
-    min-height: 80vh;
+    gap: 4rem;
   }
 
   .hero-video-content {
     flex-direction: column;
     gap: 2rem;
+    margin-bottom: 2rem;
   }
 
   .video-wrapper {
@@ -1932,6 +2257,7 @@ main {
   .video-description {
     max-width: 100%;
     text-align: center;
+    order: 2;
   }
 
   .video-title {
@@ -2783,7 +3109,20 @@ main {
   /* Hero Video Section Tablet */
   .hero-video-section {
     padding: 3rem 1rem;
-    min-height: 70vh;
+    gap: 6rem;
+  }
+
+  .hero-video-content {
+    gap: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .video-wrapper {
+    max-width: 100%;
+  }
+
+  .video-description {
+    text-align: left;
   }
 
   .video-title {

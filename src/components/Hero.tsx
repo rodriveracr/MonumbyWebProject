@@ -3,112 +3,137 @@ import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 // Static imports for images with spaces in filenames
-import product1Image from '../../public/Firefly 20251026164004.png';
-import product2Image from '../../public/Generated Image October 24, 2025 - 6_10PM (1).png';
-import product3Image from '../../public/Generated Image October 26, 2025 - 2_58PM.png';
-import product4Image from '../../public/Generated Image October 26, 2025 - 3_02PM.png';
-import product5Image from '../../public/Generated Image October 26, 2025 - 2_26PM.png';
-import product6Image from '../../public/Generated Image October 26, 2025 - 2_50PM (2).png';
+import product1Image from '../../public/GeneratedX.png';
+import product2Image from '../../public/DesktopD4.png';
+import product3Image from '../../public/MobileM2.png';
+import product4Image from '../../public/MobileM.png';
+import product5Image from '../../public/Desktop10.png';
+import product6Image from '../../public/Screenshot 2025-10-27 165250.png';
 import product7Image from '../../public/Generated Image October 26, 2025 - 2_24PM 1.png';
-import product8Image from '../../public/Generated Image October 26, 2025 - 2_50PM (1).png';
-import product9Image from '../../public/Generated Image October 26, 2025 - 2_50PM (3).png';
-import product10Image from '../../public/_V8A8175-60 1.png';
-import product11Image from '../../public/_V8A8062-26.jpg';
-import product12Image from '../../public/_V8A8155-47.jpg';
-import product13Image from '../../public/_V8A8043-1.jpg';
-import product14Image from '../../public/Screenshot 2025-10-27 165250.png';
+import product8Image from '../../public/Firefly 20251026164004.png';
+import product9Image from '../../public/Generated Image October 26, 2025 - 4_10PM.png';
+import product10Image from '../../public/Generated Image October 26, 2025 - 2_25PM.png';
+import product11Image from '../../public/Generated Image October 26, 2025 - 2_24PM.png';
+import product12Image from '../../public/Generated Image October 25, 2025 - 6_21PM.png';
+import product13Image from '../../public/Generated Image October 26, 2025 - 2_50PM (2).png';
+import product14Image from '../../public/Generated Image October 26, 2025 - 2_50PM (4).png';
 
 export default function Hero({ locale }: { locale: string }) {
   const t = useTranslations('Hero');
   const [currentSlide, setCurrentSlide] = useState(0);
-  // If the video isn't available in production (e.g., excluded from repo), show an image fallback
-  const [videoOk, setVideoOk] = useState(true);
-  // Prefer reading a hosted video URL from env (Blob/CDN/YouTube direct file URL)
-  const videoUrl = (process.env.NEXT_PUBLIC_VIDEO_URL as string | undefined) ?? undefined;
+  const [activeVideoModal, setActiveVideoModal] = useState<number | null>(null);
+  const modalVideoRef = useRef<HTMLVideoElement>(null);
+
+  const videoCarousel = [
+    {
+      id: 1,
+      title: t('videoTitle'),
+      description: t('videoParagraph1'),
+      description2: t('videoParagraph2'),
+      videoSrc: "/MotherofNumby.mp4",
+      poster: "/_V8A8062-26.jpg"
+    },
+    {
+      id: 2,
+      title: t('videoTitle2'),
+      description: t('videoParagraph2_1'),
+      description2: t('videoParagraph2_2'),
+      videoSrc: "/anesthesiaform.mp4",
+      poster: "/_V8A8155-47.jpg"
+    },
+    {
+      id: 3,
+      title: t('videoTitle3'),
+      description: t('videoParagraph3_1'),
+      description2: t('videoParagraph3_2'),
+      videoSrc: "/monumbyvideo.mp4",
+      poster: "/_V8A8043-1.jpg"
+    }
+  ];
 
   const products = [
     {
       image: product1Image,
-      name: t('product6.name'),
-      description: t('product6.description')
+      name: t('product1.name'),
+      description: t('carouselText1')
     },
     {
       image: product2Image,
-      name: t('product7.name'),
-      description: t('product7.description')
+      name: t('product6.name'),
+      description: t('carouselText2')
     },
     {
       image: product3Image,
-      name: t('product3.name'),
-      description: t('product3.description')
+      name: t('product2.name'),
+      description: t('carouselText3')
     },
     {
       image: product4Image,
-      name: t('product3.name'),
-      description: t('product3.description')
-    },
-    {
-      image: product2Image,
-      name: t('product3.name'),
-      description: t('product3.description')
-    },
-    {
-      image: product2Image,
-      name: t('product3.name'),
-      description: t('product3.description')
+      name: t('product4.name'),
+      description: t('carouselText4')
     },
     {
       image: product5Image,
-      name: t('product3.name'),
-      description: t('product3.description')
+      name: t('product2.name'),
+      description: t('carouselText5')
     },
     {
       image: product6Image,
-      name: t('product3.name'),
-      description: t('product3.description')
+      name: t('product7.name'),
+      description: t('carouselText6')
     },
     {
       image: product7Image,
-      name: t('product3.name'),
-      description: t('product3.description')
-    },
-    {
-      image: product2Image,
-      name: t('product3.name'),
-      description: t('product3.description')
+      name: t('product2.name'),
+      description: t('carouselText7')
     },
     {
       image: product8Image,
-      name: t('product3.name'),
-      description: t('product3.description')
+      name: t('product2.name'),
+      description: t('carouselText8')
     },
     {
       image: product9Image,
       name: t('product3.name'),
-      description: t('product3.description')
+      description: t('carouselText9')
+    },
+    {
+      image: product2Image,
+      name: t('product6.name'),
+      description: t('carouselText10')
+    },
+    {
+      image: product8Image,
+      name: t('product3.name'),
+      description: t('carouselText11')
+    },
+    {
+      image: product9Image,
+      name: t('product3.name'),
+      description: t('carouselText12')
     },
     {
       image: product10Image,
       name: t('product5.name'),
-      description: t('product5.description')
+      description: t('carouselText13')
     },
     {
       image: product11Image,
-      name: t('product3.name'),
-      description: t('product3.description')
+      name: t('product1.name'),
+      description: t('carouselText14')
     },
     {
       image: product12Image,
-      name: t('product3.name'),
-      description: t('product3.description')
+      name: t('product2.name'),
+      description: t('carouselText15')
     },
     {
       image: product13Image,
       name: t('product3.name'),
-      description: t('product3.description')
+      description: t('carouselText16')
     },
     {
       image: product14Image,
@@ -117,23 +142,56 @@ export default function Hero({ locale }: { locale: string }) {
     },
   ];
 
-  // Auto-advance carousel
+  // Auto-advance video carousel (only when not playing a video)
+  useEffect(() => {
+    if (activeVideoModal !== null) return;
+    
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % videoCarousel.length);
+    }, 10000);
+    return () => clearInterval(timer);
+  }, [activeVideoModal, videoCarousel.length]);
+
+  // Auto-advance product carousel
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % products.length);
-    }, 10000); // más lento: 10 segundos por imagen
+      setCurrentProductSlide((prev) => (prev + 1) % products.length);
+    }, 10000);
     return () => clearInterval(timer);
   }, [products.length]);
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % products.length);
+  const [currentProductSlide, setCurrentProductSlide] = useState(0);
+
+  const nextVideoSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % videoCarousel.length);
   };
 
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + products.length) % products.length);
+  const prevVideoSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + videoCarousel.length) % videoCarousel.length);
   };
 
-  // responsive visible count for the product strip (3 desktop, 2 tablet, 1 mobile)
+  const nextProductSlide = () => {
+    setCurrentProductSlide((prev) => (prev + 1) % products.length);
+  };
+
+  const prevProductSlide = () => {
+    setCurrentProductSlide((prev) => (prev - 1 + products.length) % products.length);
+  };
+
+  // Handle video play
+  const handleVideoPlay = (videoId: number) => {
+    setActiveVideoModal(videoId);
+  };
+
+  // Handle video close
+  const handleVideoClose = () => {
+    if (modalVideoRef.current) {
+      modalVideoRef.current.pause();
+      modalVideoRef.current.currentTime = 0;
+    }
+    setActiveVideoModal(null);
+  };
+
   const [visible, setVisible] = useState(3);
   useEffect(() => {
     const calc = () => {
@@ -165,93 +223,161 @@ export default function Hero({ locale }: { locale: string }) {
             />
           </div>
           <div className="hero-text-content">
-            <h1 className="hero-main-title">{t('title')}</h1>
-            <p className="hero-main-description">{t('slogan')}</p>
+            <h1 className="hero-main-title font-franklin text-h1">{t('title')}</h1>
+            <p className="hero-main-description text-body">{t('slogan')}</p>
           </div>
         </div>
       </section>
 
-      {/* Section 2: Video Section - Between image and carousel */}
+      {/* Section 2: Video Carousel - Play to Overlay */}
       <section className="hero-video-section">
-        <div className="hero-video-content">
-          {/* Video on the left */}
-          <div className="video-wrapper aspect-video">
-            {videoOk ? (
-              <video
-                className="hero-video w-full h-full object-cover"
-                controls
-                loop
-                playsInline
-                preload="metadata"
-                poster="/_V8A8062-26.jpg"
-                onError={() => setVideoOk(false)}
-              >
-                <source src={videoUrl ?? "/NOPAIN COMERCIAL.mp4"} type="video/mp4" />
-                {t('videoNotSupported')}
-              </video>
-            ) : (
-              <Image
-                src={product11Image}
-                alt="Monumby video placeholder"
-                className="hero-video w-full h-full object-cover"
-                priority
-              />
-            )}
-          </div>
+        <div className="video-carousel-container">
+          {/* Video Carousel */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            className="video-carousel-main"
+          >
+            {/* Video Card */}
+            <div className="video-carousel-card">
+              <div className="video-carousel-wrapper">
+                <video
+                  className="video-carousel-preview"
+                  loop
+                  muted
+                  playsInline
+                  preload="metadata"
+                  poster={videoCarousel[currentSlide].poster}
+                  onClick={() => handleVideoPlay(videoCarousel[currentSlide].id)}
+                >
+                  <source src={videoCarousel[currentSlide].videoSrc} type="video/mp4" />
+                </video>
+                {/* Play button overlay */}
+                <button
+                  onClick={() => handleVideoPlay(videoCarousel[currentSlide].id)}
+                  className="video-play-button"
+                  aria-label="Play video"
+                >
+                  <svg className="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </button>
+              </div>
 
-          {/* Text on the right */}
-          <div className="video-description">
-            <h2 className="video-title">{t('videoTitle')}</h2>
-            <p className="video-text">
-              {t('videoParagraph1')}
-            </p>
-            <p className="video-text">
-              {t('videoParagraph2')}
-            </p>
-          </div>
-        </div>
-      </section>
+              {/* Text and Navigation */}
+              <div className="video-carousel-info">
+                <h2 className="video-carousel-title font-franklin text-h2">
+                  {videoCarousel[currentSlide].title}
+                </h2>
+                <p className="video-carousel-text text-body">
+                  {videoCarousel[currentSlide].description}
+                </p>
+                <p className="video-carousel-text text-body">
+                  {videoCarousel[currentSlide].description2}
+                </p>
 
-      {/* Section 3: Product strip carousel (style like screenshot) */}
-      <section className="hero-video-section">
-        <div className="hero-video-content">
-          {/* Viewport con tamaño como el video */}
-          <div className="video-wrapper relative aspect-[9/16]">
-            {/* Imagen actual */}
-            <Image
-              src={products[currentSlide].image}
-              alt={products[currentSlide].name}
-              className="hero-video w-full h-full object-cover"
-              priority
-            />
-          </div>
-
-          {/* Texto centrado verticalmente a la mitad de la altura de la foto */}
-          <div className="flex-1 max-w-[600px] self-center text-left md:text-left">
-            <div>
-              <h3 className="text-2xl md:text-3xl font-anton tracking-wide">
-                {products[currentSlide].name}
-              </h3>
-              <p className="text-sm text-cyan-300/80">
-                {products[currentSlide].description}
-              </p>
-              {/* Dots de navegación debajo del texto */}
-              <div className="mt-4 flex items-center gap-2">
-                {products.map((_, idx) => (
-                  <button
-                    key={idx}
-                    aria-label={`Ir a imagen ${idx + 1}`}
-                    onClick={() => setCurrentSlide(idx)}
-                    className={
-                      idx === currentSlide
-                        ? 'w-2.5 h-2.5 rounded-full bg-white shadow-[0_0_6px_rgba(0,0,0,0.6)]'
-                        : 'w-2 h-2 rounded-full bg-white/40 hover:bg-white/70 transition-colors'
-                    }
-                  />
-                ))}
+                {/* Navigation Dots */}
+                <div className="video-carousel-dots">
+                  {videoCarousel.map((_, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => setCurrentSlide(idx)}
+                      className={`dot ${idx === currentSlide ? 'active' : ''}`}
+                      aria-label={`Go to video ${idx + 1}`}
+                    />
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
+          </motion.div>
+        </div>
+
+        {/* Video Modal Overlay */}
+        {activeVideoModal !== null && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={handleVideoClose}
+            className="video-modal-overlay"
+          >
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              onClick={(e) => e.stopPropagation()}
+              className="video-modal-content"
+            >
+              <button
+                onClick={handleVideoClose}
+                className="video-modal-close"
+                aria-label="Close video"
+              >
+                ✕
+              </button>
+              <video
+                ref={modalVideoRef}
+                key={activeVideoModal}
+                className="video-modal-player"
+                controls
+                autoPlay
+                playsInline
+                onEnded={handleVideoClose}
+              >
+                <source src={videoCarousel.find(v => v.id === activeVideoModal)?.videoSrc} type="video/mp4" />
+              </video>
+            </motion.div>
+          </motion.div>
+        )}
+      </section>
+
+      {/* Section 3: Product Carousel - Galería Interactiva */}
+      <section className="hero-video-section">
+        <div className="video-carousel-container">
+          {/* Product Carousel */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            className="video-carousel-main"
+          >
+            {/* Product Card */}
+            <div className="video-carousel-card">
+              <div className="video-carousel-wrapper">
+                <Image
+                  src={products[currentProductSlide].image}
+                  alt={products[currentProductSlide].name}
+                  className="product-carousel-image"
+                  priority
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+
+              {/* Text and Navigation */}
+              <div className="video-carousel-info">
+                <h2 className="video-carousel-title font-franklin text-h2">
+                  {products[currentProductSlide].name}
+                </h2>
+                <p className="video-carousel-text text-body">
+                  {products[currentProductSlide].description}
+                </p>
+
+                {/* Navigation Dots */}
+                <div className="video-carousel-dots">
+                  {products.map((_, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => setCurrentProductSlide(idx)}
+                      className={`dot ${idx === currentProductSlide ? 'active' : ''}`}
+                      aria-label={`Go to product ${idx + 1}`}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
     </>
