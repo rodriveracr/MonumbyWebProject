@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 
-// Static imports for images with spaces in filenames
-import product1Image from '../../../../../public/Generated Image October 24, 2025 - 11_41AM.png';
-import product2Image from '../../../../../public/Generated Image October 24, 2025 - 11_44AM.png';
-import product3Image from '../../../../../public/Generated Image October 24, 2025 - 11_43AM.png';
+// Static imports for product images
+import product1Image from '../../../../../public/a4.jpg';
+import product2Image from '../../../../../public/a6.jpg';
+import product3Image from '../../../../../public/a5.jpg';
 
 export default function MonumbyProductsPage() {
   const t = useTranslations('MonumbyProducts');
