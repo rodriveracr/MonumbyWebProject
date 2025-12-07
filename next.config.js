@@ -7,6 +7,10 @@ const nextConfig = {
     // Allow Next.js to optimize images normally.
     // For images with spaces/special chars in filenames, use static imports in components.
     remotePatterns: [],
+  },
+  staticPageGenerationTimeout: 300,
+  experimental: {
+    serverComponentsExternalPackages: [],
   }
 };
 
