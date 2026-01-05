@@ -6,20 +6,20 @@ import Link from 'next/link';
 import { useState, useEffect, useRef } from 'react';
 
 // Static imports for images with spaces in filenames
-import product1Image from '../../public/GeneratedX.png';
-import product2Image from '../../public/DesktopD4.png';
-import product3Image from '../../public/MobileM2.png';
-import product4Image from '../../public/MobileM.png';
-import product5Image from '../../public/Desktop10.png';
-import product6Image from '../../public/Screenshot 2025-10-27 165250.png';
-import product7Image from '../../public/Generated Image October 26, 2025 - 2_24PM 1.png';
+import product1Image from '../../public/WhatsApp Image 2025-12-18 at 7.21.08 PM.jpeg';
+import product2Image from '../../public/WhatsApp Image 2025-12-18 at 7.24.17 PM.jpeg';
+import product3Image from '../../public/WhatsApp Image 2025-12-18 at 7.26.24 PM.jpeg';
+import product4Image from '../../public/WhatsApp Image 2025-12-18 at 7.29.06 PM.jpeg';
+import product5Image from '../../public/DesktopD4.png';
+import product6Image from '../../public/Generated Image October 26, 2025 - 2_24PM 1.png';
+import product7Image from '../../public/Screenshot 2025-10-27 165250.png';
 import product8Image from '../../public/Firefly 20251026164004.png';
 import product9Image from '../../public/Generated Image October 26, 2025 - 4_10PM.png';
-import product10Image from '../../public/Generated Image October 26, 2025 - 2_25PM.png';
-import product11Image from '../../public/Generated Image October 26, 2025 - 2_24PM.png';
-import product12Image from '../../public/Generated Image October 25, 2025 - 6_21PM.png';
-import product13Image from '../../public/Generated Image October 26, 2025 - 2_50PM (2).png';
-import product14Image from '../../public/Generated Image October 26, 2025 - 2_50PM (4).png';
+import product10Image from '../../public/Generated Image October 26, 2025 - 2_50PM (4).png';
+import product11Image from '../../public/Generated Image October 26, 2025 - 2_50PM (2).png';
+import product12Image from '../../public/Generated Image October 26, 2025 - 2_50PM (1).png';
+import product13Image from '../../public/Generated Image October 26, 2025 - 2_25PM.png';
+import product14Image from '../../public/Generated Image October 25, 2025 - 6_22PM.png';
 
 export default function Hero({ locale }: { locale: string }) {
   const t = useTranslations('Hero');
@@ -33,7 +33,7 @@ export default function Hero({ locale }: { locale: string }) {
       title: t('videoTitle'),
       description: t('videoParagraph1'),
       description2: t('videoParagraph2'),
-      videoSrc: "/MotherofNumby.webm",
+      videoSrc: "/MotherofNumby.mp4",
       poster: "/_V8A8062-26.jpg"
     },
     {
@@ -41,7 +41,7 @@ export default function Hero({ locale }: { locale: string }) {
       title: t('videoTitle2'),
       description: t('videoParagraph2_1'),
       description2: t('videoParagraph2_2'),
-      videoSrc: "/anesthesiaform.webm",
+      videoSrc: "/anesthesiaform.mp4",
       poster: "/_V8A8155-47.jpg"
     },
     {
@@ -49,7 +49,7 @@ export default function Hero({ locale }: { locale: string }) {
       title: t('videoTitle3'),
       description: t('videoParagraph3_1'),
       description2: t('videoParagraph3_2'),
-      videoSrc: "/monumbyvideo.webm",
+      videoSrc: "/monumbyvideo.mp4",
       poster: "/_V8A8043-1.jpg"
     }
   ];
@@ -62,12 +62,12 @@ export default function Hero({ locale }: { locale: string }) {
     },
     {
       image: product2Image,
-      name: t('product6.name'),
+      name: t('product2.name'),
       description: t('carouselText2')
     },
     {
       image: product3Image,
-      name: t('product2.name'),
+      name: t('product3.name'),
       description: t('carouselText3')
     },
     {
@@ -77,69 +77,54 @@ export default function Hero({ locale }: { locale: string }) {
     },
     {
       image: product5Image,
-      name: t('product2.name'),
+      name: t('product5.name'),
       description: t('carouselText5')
     },
     {
       image: product6Image,
-      name: t('product7.name'),
+      name: t('product6.name'),
       description: t('carouselText6')
     },
     {
       image: product7Image,
-      name: t('product2.name'),
+      name: t('product7.name'),
       description: t('carouselText7')
     },
     {
       image: product8Image,
-      name: t('product2.name'),
+      name: t('product8.name'),
       description: t('carouselText8')
     },
     {
       image: product9Image,
-      name: t('product3.name'),
+      name: t('product9.name'),
       description: t('carouselText9')
     },
     {
-      image: product2Image,
-      name: t('product6.name'),
+      image: product10Image,
+      name: t('product10.name'),
       description: t('carouselText10')
     },
     {
-      image: product8Image,
-      name: t('product3.name'),
+      image: product11Image,
+      name: t('product11.name'),
       description: t('carouselText11')
     },
     {
-      image: product9Image,
-      name: t('product3.name'),
+      image: product12Image,
+      name: t('product12.name'),
       description: t('carouselText12')
     },
     {
-      image: product10Image,
-      name: t('product5.name'),
+      image: product13Image,
+      name: t('product13.name'),
       description: t('carouselText13')
     },
     {
-      image: product11Image,
-      name: t('product1.name'),
-      description: t('carouselText14')
-    },
-    {
-      image: product12Image,
-      name: t('product2.name'),
-      description: t('carouselText15')
-    },
-    {
-      image: product13Image,
-      name: t('product3.name'),
-      description: t('carouselText16')
-    },
-    {
       image: product14Image,
-      name: t('product4.name'),
-      description: t('product4.description')
-    },
+      name: t('product14.name'),
+      description: t('carouselText14')
+    }
   ];
 
   // Auto-advance video carousel (only when not playing a video)
@@ -213,18 +198,30 @@ export default function Hero({ locale }: { locale: string }) {
       <section className="hero-mother-section">
         <div className="hero-premium-showcase">
           <div className="hero-woman-container">
-            <Image
-              src="/frontmother-removebg-preview.png"
-              alt="Monumby Premium Experience"
-              width={1000}
-              height={1000}
-              className="hero-woman-image"
-              priority
-            />
+            <div className="premium-image-frame">
+              <div className="premium-glow-effect"></div>
+              <Image
+                src="/mother-numby-final.png"
+                alt="Monumby Premium Experience"
+                width={1000}
+                height={1000}
+                className="hero-woman-image"
+                priority
+              />
+            </div>
           </div>
           <div className="hero-text-content">
             <h1 className="hero-main-title font-franklin text-h1">{t('title')}</h1>
             <p className="hero-main-description text-body">{t('slogan')}</p>
+            <div className="hero-magazine-features">
+              <span className="feature-dot"></span>
+              <span className="feature-text">{t('feature1Percent')} {t('feature1Label')} {t('feature1Label2')}</span>
+              <span className="feature-dot"></span>
+              <span className="feature-text">{t('feature2Percent')} {t('feature2Label')} {t('feature2Label2')}</span>
+              <span className="feature-dot"></span>
+              <span className="feature-text">{t('feature3Label')} {t('feature3Label2')}</span>
+              <span className="feature-dot"></span>
+            </div>
           </div>
         </div>
       </section>
@@ -251,7 +248,7 @@ export default function Hero({ locale }: { locale: string }) {
                   poster={videoCarousel[currentSlide].poster}
                   onClick={() => handleVideoPlay(videoCarousel[currentSlide].id)}
                 >
-                  <source src={videoCarousel[currentSlide].videoSrc} type="video/webm" />
+                  <source src={videoCarousel[currentSlide].videoSrc} type="video/mp4" />
                 </video>
                 {/* Play button overlay */}
                 <button
@@ -325,7 +322,7 @@ export default function Hero({ locale }: { locale: string }) {
                 playsInline
                 onEnded={handleVideoClose}
               >
-                <source src={videoCarousel.find(v => v.id === activeVideoModal)?.videoSrc} type="video/webm" />
+                <source src={videoCarousel.find(v => v.id === activeVideoModal)?.videoSrc} type="video/mp4" />
               </video>
             </motion.div>
           </motion.div>

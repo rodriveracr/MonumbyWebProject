@@ -10,7 +10,16 @@
   },
   "Hero": {
     "title": "MOTHER OF NUMBY",
-    "slogan": "MOTHER OF NUMBY LÍNEA PREMIUM DE NO PAIN.",
+    "slogan": "LÍNEA PREMIUM DE NO PAIN.",
+    "feature1Percent": "50%",
+    "feature1Label": "Más activos",
+    "feature1Label2": "anestésicos",
+    "feature2Percent": "90-120",
+    "feature2Label": "Minutos de",
+    "feature2Label2": "protección",
+    "feature3Percent": "∞",
+    "feature3Label": "Cicatrización",
+    "feature3Label2": "acelerada",
     "videoTitle": "Descubre la Experiencia Monumby",
     "videoParagraph1": "Mother of Numby es la nueva crema anestésica de No Pain, probada por el artista Emanuel Tres Palacios (Medellín, 10–12 años de experiencia). Primera impresión: trae 3 veces más contenido que No Pain, aroma distinto y una textura más manejable y fácil de aplicar.",
     "videoParagraph2": "Se aplica cubriendo la piel y se espera 90–120 minutos para el bloqueo completo. A los 4 días, la pieza cicatrizó muy rápido y sin efectos secundarios; por el contrario, ayudó a la cicatrización. Conclusión: Mother of Numby, altamente recomendada para artistas.",
@@ -48,6 +57,34 @@
     "product7": {
       "name": "Suero y Spray Monumby",
       "description": "El suero y spray de Monumby, aliados esenciales del tatuaje, se alían con la precisión del artista para un proceso más suave y profesional. ¡Confía en Monumby para que cada sesión deje huella con comodidad y estilo!"
+    },
+    "product8": {
+      "name": "Kit de Cuidado Premium",
+      "description": "Solución anestésica y cicatrizante completa para artistas profesionales. Máximo confort con cicatrización acelerada."
+    },
+    "product9": {
+      "name": "Elección del Artista",
+      "description": "Confianza de tatuadores élite. Nuestra mezcla signature para resultados superiores."
+    },
+    "product10": {
+      "name": "Suero Cicatrizante Pro",
+      "description": "Fórmula avanzada para profesionales. Rápida, invisible, transformadora."
+    },
+    "product11": {
+      "name": "Monumby Elite",
+      "description": "La experiencia final en cuidado tattoo. Diseñado para perfeccionistas que exigen excelencia."
+    },
+    "product12": {
+      "name": "Fórmula Maestra",
+      "description": "Hecha para maestros del arte. Ingredientes premium, resultados premium."
+    },
+    "product13": {
+      "name": "Sistema de Cuidado Legado",
+      "description": "Transmite excelencia. El sistema completo de confianza generacional de artistas."
+    },
+    "product14": {
+      "name": "Monumby Obra Maestra",
+      "description": "Transforma tu arte. El toque final que tus clientes merecen."
     },
     "carouselText1": "Mother of Numby es el secreto de los artistas profesionales. Con 50% de activos anestésicos y una fórmula sin vasoconstrictores, garantiza 90-120 minutos de confort absoluto. Cicatrización acelerada, resultados perfectos.",
     "carouselText2": "Después del arte viene la sanación. Nuestro Suero Monumby acelera la recuperación con una fórmula cicatrizante que protege los colores y mantiene la piel hidratada. Tu tatuaje merece el mejor cuidado.",
@@ -104,24 +141,24 @@
     "subtitle": "Los tres pilares de Monumby para el cuidado profesional del tatuaje",
     "product1": {
       "name": "Mother of Numby",
-      "description": "Anestesia tópica ultra-concentrada con 50% de agentes activos. Formulada con bloqueadores de canales de sodio y compuestos antiinflamatorios, analgésicos y antibacterianos potenciados. Duración extendida (90 minutos - 2 horas) sin vasoconstrictores. Protege la integridad del pigmento.",
-      "feature1": "50% de concentración de agentes activos",
-      "feature2": "Formulación antiinflamatoria y segura para pigmentos",
-      "feature3": "Garantía libre de vasoconstrictores"
+      "description": "Anestesia Mo Numby 30G: Anestesia tópica concentrada que actúa bloqueando los canales de sodio en la zona aplicada. Formulada a base de tres anestésicos, posee casi un 50% de activos (el porcentaje más alto desarrollado en formulaciones tópicas), potenciados con agentes naturales que incrementan el efecto anestésico. Gracias a sus agentes potenciadores, puede reducir la inflamación y el dolor a través de sus propiedades antiinflamatorias y analgésicas, y controlar infecciones al inhibir el crecimiento de bacterias y hongos, lo que es beneficioso en el contexto de procedimientos donde la higiene es crucial. Libre de agentes que provoquen cambios en la cicatrización, ya que no utilizamos aditivos vasoconstrictores que afecten la tonalidad de los pigmentos. Brinda de 1 a 5 horas de bloqueo en el estímulo nervioso. Aplicarlo de 90 minutos a 2 horas previo o bien con la piel abierta sin que afecta el resultado de los pigmentos y la cicatrización. Libre de fragancias y colorantes artificiales. Abarca un área de 45cm de diámetro aproximadamente.",
+      "feature1": "50% de activos—concentración máxima",
+      "feature2": "1 a 5 horas de protección anestésica",
+      "feature3": "Libre de vasoconstrictores y seguro para pigmentos"
     },
     "product2": {
       "name": "Monumby Healing Serum",
-      "description": "Serum cicatrizante avanzado con fórmula dual (oleosa + acuosa). Combina ingredientes activos ultra-concentrados con tecnología de absorción rápida. Presentación 15ML para protocolo completo de cuidado post-tatuaje.",
-      "feature1": "Textura ligera con absorción rápida",
-      "feature2": "Fórmula con extractos grasos regeneradores",
-      "feature3": "Ingredientes activos ultra-concentrados"
+      "description": "Serum Mother of Numb Cicatrizante: Formulado para acelerar la reparación epidérmica en el proceso de cicatrización del tatuaje. Diseñamos serums con el fin de proporcionar una alternativa más suave en el momento de la aplicación que a su vez aporta un extra de nutrición en la piel para mantenerla sana, flexible, libre de infecciones. ¿Por qué un serum? Su textura ligera facilita la rápida absorción, esto permite que su contenido de activos penetre mucho más expedito en las capas más profundas de la epidermis. Hemos agrupado los principales ingredientes de cicatrización en el proceso del tatuaje en las dosis activas adecuadas que favorecen una correcta cicatrización. Además, al tener una alta concentración, actúan de forma rápida, por lo que permiten una reparación más profunda de la piel manteniendo los colores del nuevo tatuaje y una piel sana. Fórmula Oleosa: la eficacia combinada de extractos grasos regeneradores. Esta innovadora combinación consigue potenciar la acción hidratante y nutritiva de los aceites, aportando una película protectora. Fórmula Acuosa: formula ultra concentrada de extractos que hidratan y aceleran el proceso de cicatrización del tatuaje sin dejar una sensación grasa. Su textura casi imperceptible, se absorbe rápidamente sin aportar grasitud a la piel, por lo que es apto para ser usado en cualquier momento del día. 15ML.",
+      "feature1": "Fórmula dual (oleosa + acuosa)",
+      "feature2": "Tecnología de absorción ultra-rápida",
+      "feature3": "Cicatrización profunda y protección del pigmento"
     },
     "product3": {
       "name": "Monumby Witch Hazel Tonic",
-      "description": "Tónico Hamamelis virginiana destilado al 100% natural. Acción astringente con propiedades de distribución uniforme de pigmentos. Fórmula versátil para preparación y cuidado post-tatuaje. Presentación 150ML.",
-      "feature1": "100% natural - Hamamelis destilada",
-      "feature2": "Acción astringente para uniformidad de pigmentos",
-      "feature3": "Uso versátil en preparación y cuidado"
+      "description": "Tónico natural al 100% obtenido por destilación de la planta hamamelis. Preserva íntegramente las propiedades originales de esta planta. Conocido por su efecto calmante sobre la piel, es perfecto para diluir pigmentos y generar una variedad de tonos que se adapten al estilo único de cada artista. Gracias a su acción astringente y su efecto bálsamo, ayuda a que la tinta se distribuya de manera uniforme sobre la piel. Su capacidad para acondicionar, tonificar y calmar lo convierte en un producto esencial para realizar tatuajes sin causar irritaciones ni traumatismos. También es ideal para incluir en rutinas de cuidado facial, tratamientos estéticos, maquillaje permanente, entre otros usos. Fabricado a partir de planta de hamamelis. Presentación 150 ML.",
+      "feature1": "Destilado natural 100% hamamelis",
+      "feature2": "Acción astringente para distribución uniforme de pigmentos",
+      "feature3": "Calmante y acondicionador para el cuidado de la piel"
     },
     "cta": "CONTACTAR",
     "back": "Volver al inicio"

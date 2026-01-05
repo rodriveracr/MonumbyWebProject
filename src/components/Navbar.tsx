@@ -58,11 +58,6 @@ export default function Navbar() {
             {isProductsOpen && (
               <ul className="navbar-dropdown-menu">
                 <li>
-                  <Link href={`/${locale}/productos/tintas`} className="navbar-dropdown-link" onClick={() => setIsMobileMenuOpen(false)}>
-                    {t('inks')}
-                  </Link>
-                </li>
-                <li>
                   <Link href={`/${locale}/productos/monumby-products`} className="navbar-dropdown-link" onClick={() => setIsMobileMenuOpen(false)}>
                     {t('monumbyProducts')}
                   </Link>
