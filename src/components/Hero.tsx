@@ -41,7 +41,7 @@ export default function Hero({ locale }: { locale: string }) {
       title: t('videoTitle2'),
       description: t('videoParagraph2_1'),
       description2: t('videoParagraph2_2'),
-      videoSrc: "/anesthesiaform.mp4",
+      videoSrc: "/anesthesiaform.webm",
       poster: "/_V8A8155-47.jpg"
     },
     {
@@ -243,12 +243,13 @@ export default function Hero({ locale }: { locale: string }) {
                   className="video-carousel-preview"
                   loop
                   muted
+                  autoPlay
                   playsInline
                   preload="metadata"
                   poster={videoCarousel[currentSlide].poster}
                   onClick={() => handleVideoPlay(videoCarousel[currentSlide].id)}
                 >
-                  <source src={videoCarousel[currentSlide].videoSrc} type="video/mp4" />
+                  <source src={videoCarousel[currentSlide].videoSrc} type={videoCarousel[currentSlide].videoSrc.endsWith('.webm') ? 'video/webm' : 'video/mp4'} />
                 </video>
                 {/* Play button overlay */}
                 <button
@@ -322,7 +323,7 @@ export default function Hero({ locale }: { locale: string }) {
                 playsInline
                 onEnded={handleVideoClose}
               >
-                <source src={videoCarousel.find(v => v.id === activeVideoModal)?.videoSrc} type="video/mp4" />
+                <source src={videoCarousel.find(v => v.id === activeVideoModal)?.videoSrc} type={videoCarousel.find(v => v.id === activeVideoModal)?.videoSrc.endsWith('.webm') ? 'video/webm' : 'video/mp4'} />
               </video>
             </motion.div>
           </motion.div>

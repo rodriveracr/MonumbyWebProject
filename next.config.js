@@ -11,7 +11,25 @@ const nextConfig = {
   staticPageGenerationTimeout: 300,
   experimental: {
     serverComponentsExternalPackages: [],
-  }
+  },
+  // Video streaming support
+  headers: async () => {
+    return [
+      {
+        source: '/(.*).(mp4|webm|ogg)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+          {
+            key: 'Content-Type',
+            value: 'video/mp4',
+          },
+        ],
+      },
+    ];
+  },
 };
 
 module.exports = withNextIntl(nextConfig);

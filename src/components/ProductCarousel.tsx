@@ -11,8 +11,8 @@ const products = [
   },
   {
     image: "/product2.jpg",
-    title: "Healing Serum",
-    subtitle: "Premium skin recovery",
+    title: "Serum Cicatrizante",
+    subtitle: "Recuperación premium de la piel",
     link: "Learn More"
   },
   {
